@@ -12,8 +12,6 @@ class AppController extends Controller
      */
     public function indexAction()
     {
-    	
-
     	$user = $this->getUser();
 
     	$data = array(
@@ -21,7 +19,7 @@ class AppController extends Controller
     		//"user"=>$user
     	);
 
-    	//var_dump($user);
+    	$duedilService = $this->get('duedil');
 
         return $this->render('AppBundle:App:index.html.twig', $data);
     }
