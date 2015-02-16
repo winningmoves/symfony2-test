@@ -24,8 +24,6 @@ framework:
         handler_id:  ~
     fragments:       ~
     http_method_override: true
-    # Duedil api key
-    duedil_api_key: "dy279ae4q7rgrbq3s6h8rvt3"
 
 # Twig Configuration
 twig:
