@@ -24,7 +24,7 @@ class ApiController extends Controller
 
 	    	$company = $duedilService->getCompany($request->query->get('company_number'));
 
-            $response->setContent($company);
+            $response->setContent(json_encode($company));
 
     	}else{
 
