@@ -71,3 +71,7 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# Duedil credentials
+duedil:
+    apikey: "dy279ae4q7rgrbq3s6h8rvt3"
