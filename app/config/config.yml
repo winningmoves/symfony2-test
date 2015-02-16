@@ -76,3 +76,8 @@ fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: AppBundle\Entity\User
+
+# Duedil credentials
+duedil:
+    apikey: "dy279ae4q7rgrbq3s6h8rvt3"
+
