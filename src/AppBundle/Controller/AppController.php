@@ -15,18 +15,24 @@ class AppController extends Controller
     {
     	$user = $this->getUser();
 
+        $usersCompanies = array();
+
     	$data = array(
     		"title"=>"Home",
-    		"companies"=>array()
+    		"companies"=>array(),
+    		"your_companies"=>array()
     	);
+
+        if($user){
+
+            $data["your_companies"] = $user->getCompanies();
+        }
 
     	if($request->request->get('search')){
     		
     		$duedilService = $this->get('duedil');
 
 	    	$companies = $duedilService->search( $request->request->get('search') );
-
-	    	$company = $duedilService->getCompany("04827522");
 
 	    	$data['companies'] = $companies;
     	}

@@ -2,10 +2,32 @@
 
 {% block content %}
 
+<!-- View created to demonstrate knowledge of working with the twig templating engine -->
+{% if companies %}
 <div class="row">
 
-	<h1>Home</h1>
+	<h3>Search results</h3>
 	
+	<ul class="list-group">
+
+		{% for c in companies %}
+	        <li class="list-group-item"><button type="button" class="btn btn-default btn-xs" style="margin-right: 10px;">Save</button><span class="badge">{{c.company_number}}</span> {{c.name|upper}} </li>
+	    {% endfor %}
+
+	</ul>
+	
+</div>
+{% endif %}
+
+<div class="row">
+	<h3>Saved companies</h3>
+	<ul>
+
+		{% for cy in your_companies %}
+	        <li>{{cy.name}}</li>
+	    {% endfor %}
+		
+	</ul>
 </div>
 
 {% endblock %}

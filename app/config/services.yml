@@ -7,3 +7,4 @@ parameters:
 services:
     DueDil:
         class: AppBundle\Services\DueDil
+        arguments:    ["%duedil_api_key%"]

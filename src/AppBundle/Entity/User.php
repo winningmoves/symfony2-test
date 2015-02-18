@@ -22,7 +22,10 @@ class User extends BaseUser
      */
     protected $id;
 
-    
+    /**
+     * @ORM\OneToMany(targetEntity="Company", mappedBy="user")
+     */
+    protected $companies;
 
     public function __construct()
     {
@@ -40,5 +43,37 @@ class User extends BaseUser
         return $this->id;
     }
 
-    
+
+    /**
+     * Add companies
+     *
+     * @param \AppBundle\Entity\Company $companies
+     * @return User
+     */
+    public function addCompany(\AppBundle\Entity\Company $companies)
+    {
+        $this->companies[] = $companies;
+
+        return $this;
+    }
+
+    /**
+     * Remove companies
+     *
+     * @param \AppBundle\Entity\Company $companies
+     */
+    public function removeCompany(\AppBundle\Entity\Company $companies)
+    {
+        $this->companies->removeElement($companies);
+    }
+
+    /**
+     * Get companies
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCompanies()
+    {
+        return $this->companies;
+    }
 }
