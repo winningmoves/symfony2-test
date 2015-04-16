@@ -14,8 +14,8 @@ Users should also be able to:
     
 <b>This test is designed to see how you approach a development project.
 <b>There is NO one correct answer, only solutions to a problem, so give it a bash.</b>
-<b>TIP: Try and stick to Symfony 2 conventions as much as possible to impress.</b>
-<b>TIP: Implement a bit of Angular JS to impress.</b>
+<br><b>TIP 1: Try and stick to Symfony 2 conventions as much as possible to impress.</b>
+<br><b>TIP 2: Implement a bit of Angular JS to impress.</b>
 </p>
 
 <b>Set-up</b>
