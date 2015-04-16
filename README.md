@@ -7,13 +7,16 @@ Update the existing code in this repository to allow authenticated users to sear
 Users should also be able to: 
     <ul>
         <li>Search for companies</li>
-        <li>Pin companies to their dashboard for quick access later on</li>
-        <li>View only the pinned companies</li>
+        <li>Pin/favourite companies to the user's dashboard for quick access later on</li>
+        <li>View only the pinned/favourite companies</li>
         <li>View the tool on desktops, tablets or mobile phones</li>
     </ul>
     
 <b>This test is designed to see how you approach a development project.
-<b>There is NO one correct answer, only solutions to a problem, so give it a bash.</b></p>
+<b>There is NO one correct answer, only solutions to a problem, so give it a bash.</b>
+<b>TIP: Try and stick to Symfony 2 conventions as much as possible to impress.</b>
+<b>TIP: Implement a bit of Angular JS to impress.</b>
+</p>
 
 <b>Set-up</b>
 <ol>
